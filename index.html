@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -119,16 +118,16 @@
 
         .btn-outline:hover { border-color: #fff; background: rgba(255,255,255,0.05); }
 
-        /* ================= HOME SECTION & LIVE EFFECT ================= */
+        /* ================= HOME SECTION ================= */
         .home-section {
             position: relative;
             width: 100vw;
-            height: 100vh;
+            min-height: 100vh; /* Changed from height: 100vh */
             overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            padding: 0 8%;
+            padding: 120px 8% 60px; /* Added top padding for fixed header */
         }
 
         .home-background {
@@ -462,9 +461,11 @@
             .nav.active { display: flex; }
             .header .btn-primary { display: none; } /* Hide button in header on mobile */
             
-            .home-section { justify-content: center; text-align: center; }
+            .home-section { justify-content: center; text-align: center; padding-top: 100px; }
             .home-content p { margin: 0 auto 40px; }
             .cta-group { justify-content: center; }
+            
+            .benefits-flow-line { display: none; } /* Hide flow line on mobile as cards stack */
             
             .about-overlap-wrapper { margin-top: -30px; }
             .about-img-75 { width: 100%; }
