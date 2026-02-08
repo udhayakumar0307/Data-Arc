@@ -353,14 +353,14 @@ body {
     position: absolute;
     bottom: -20px;
     right: -20px;
-    width: 140px;
-    height: 140px;
+    width: 180px;
+    height: 180px;
     background-size: contain;
     background-repeat: no-repeat;
-    opacity: 0.4;
+    opacity: 0.9;
     animation: rotate360 20s linear infinite;
     pointer-events: none;
-    filter: brightness(1.5) saturate(1.8);
+    filter: brightness(1.2) saturate(1.5) hue-rotate(-10deg);
 }
 
 @keyframes rotate360 {
@@ -400,8 +400,8 @@ body {
 }
 
 .benefit-card:hover::after {
-    opacity: 0.6;
-    filter: brightness(2) saturate(2);
+    opacity: 0.45;
+    filter: brightness(1.5) saturate(1.8) hue-rotate(-10deg);
 }
 
 .benefit-card:hover i {
