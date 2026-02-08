@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orchestrix AI | Data Arc</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-wrapper">
+            <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 15px;">
+                <img src="DataarcLogo.png" alt="Data Arc" class="header-logo-img" onerror="this.style.display='none'">
+                <h2>DATA ARC</h2>
+            </a>
+        </div>
+        <nav class="nav" id="nav-menu">
+            <div class="nav-item">
+                <div class="nav-link" onclick="toggleMobileSubmenu(this)">Overview <i class="fas fa-chevron-down"></i></div>
+                <div class="dropdown-menu"><a href="about.html">About Data Arc</a><a href="mission.html">Mission</a><a href="vision.html">Vision</a></div>
+            </div>
+            <div class="nav-item">
+                <div class="nav-link" onclick="toggleMobileSubmenu(this)">Expertise <i class="fas fa-chevron-down"></i></div>
+                <div class="dropdown-menu"><a href="enterprise.html">AI for Enterprise</a><a href="engineering.html">Engineering</a><a href="design.html">Design</a><a href="functions.html">Functions</a><a href="research.html">Research</a></div>
+            </div>
+            <div class="nav-item"><a href="products.html" class="nav-link">Products</a></div>
+            <div class="nav-item"><a href="services.html" class="nav-link">Services</a></div>
+            <div class="nav-item"><a href="careers.html" class="nav-link">Careers</a></div>
+            <div class="nav-item"><a href="contact.html" class="nav-link" style="font-weight: 700;">Contact Us</a></div>
+        </nav>
+        <div class="mobile-menu-btn" id="menu-toggle"><i class="fas fa-bars"></i></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="home-section" style="height: 60vh; min-height: 500px;">
+        <div class="video-bg">
+            <video autoplay muted loop playsinline>
+                <source src="https://framerusercontent.com/assets/4VFIVddqhtCk5hd3chmAk6i4.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="video-overlay"></div>
+        <div class="home-container reveal active">
+            <div class="home-content">
+                <div style="display: inline-block; padding: 8px 20px; background: rgba(255,255,255,0.1); border-radius: 30px; margin-bottom: 20px;">
+                    <i class="fas fa-project-diagram"></i> Product
+                </div>
+                <h1>Orchestrix AI</h1>
+                <p style="font-size: 1.3em; max-width: 700px; margin: 0 auto;">Intelligent agents that work for you 24/7</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="content-section">
+        <div class="container reveal">
+            <h2 class="section-title">Overview</h2>
+            <p class="about-text">Orchestrix AI is an advanced agentic automation platform that deploys intelligent AI agents to handle complex workflows, personalize customer interactions, and orchestrate multi-step processes across your technology stack. These autonomous agents can plan, execute, learn, and adapt, reducing manual work while delivering personalized experiences at scale.</p>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="content-section" style="background: #08182d;">
+        <div class="container reveal">
+            <h2 class="section-title">Key Features</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-users-cog" style="font-size: 30px; color: #fff; margin-bottom: 15px;"></i>
+                    <h3>Multi-Agent Orchestration</h3>
+                    <p class="text-muted">Deploy specialized AI agents that collaborate to accomplish complex tasks, from sales outreach to customer support to data analysis.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-brain" style="font-size: 30px; color: #fff; margin-bottom: 15px;"></i>
+                    <h3>Autonomous Decision Making</h3>
+                    <p class="text-muted">Agents analyze context, evaluate options, and make decisions based on business rules, historical data, and real-time conditions.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-user-circle" style="font-size: 30px; color: #fff; margin-bottom: 15px;"></i>
+                    <h3>Hyper-Personalization</h3>
+                    <p class="text-muted">Customize every interaction based on individual preferences, behavior history, and contextual signals for maximum relevance.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-sitemap" style="font-size: 30px; color: #fff; margin-bottom: 15px;"></i>
+                    <h3>Workflow Automation</h3>
+                    <p class="text-muted">Automate end-to-end processes including lead qualification, customer onboarding, support escalation, and approval workflows.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-comments" style="font-size: 30px; color: #fff; margin-bottom: 15px;"></i>
+                    <h3>Natural Language Interface</h3>
+                    <p class="text-muted">Interact with agents using conversational AI to delegate tasks, get updates, and receive recommendations in plain English.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-chart-line" style="font-size: 30px; color: #fff; margin-bottom: 15px;"></i>
+                    <h3>Continuous Learning</h3>
+                    <p class="text-muted">Agents improve over time by learning from outcomes, user feedback, and A/B testing to optimize performance automatically.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="content-section">
+        <div class="container reveal">
+            <h2 class="section-title">Use Cases</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card" style="background: linear-gradient(135deg, #1e3a5f 0%, #0a1628 100%);">
+                    <h3>AI Sales Development Rep</h3>
+                    <p class="text-muted">Automate prospecting, outreach, follow-ups, and meeting scheduling with personalized messaging that adapts to each lead's behavior and interests.</p>
+                </div>
+                <div class="benefit-card" style="background: linear-gradient(135deg, #1e3a5f 0%, #0a1628 100%);">
+                    <h3>Customer Support Automation</h3>
+                    <p class="text-muted">Handle tier-1 support queries, troubleshoot issues, escalate complex cases, and provide 24/7 assistance across multiple channels.</p>
+                </div>
+                <div class="benefit-card" style="background: linear-gradient(135deg, #1e3a5f 0%, #0a1628 100%);">
+                    <h3>Marketing Campaign Orchestration</h3>
+                    <p class="text-muted">Plan, execute, and optimize multi-channel campaigns with personalized content, timing, and channel selection for each recipient.</p>
+                </div>
+                <div class="benefit-card" style="background: linear-gradient(135deg, #1e3a5f 0%, #0a1628 100%);">
+                    <h3>Operations & IT Automation</h3>
+                    <p class="text-muted">Automate DevOps tasks, incident response, compliance checks, report generation, and cross-system data synchronization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agent Types -->
+    <section class="content-section" style="background: #08182d;">
+        <div class="container reveal">
+            <h2 class="section-title">Pre-Built Agent Types</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card" style="border-left: 4px solid #4CAF50;">
+                    <h3>Research Agent</h3>
+                    <p class="text-muted">Gathers information from multiple sources, validates data, and synthesizes findings into actionable insights.</p>
+                </div>
+                <div class="benefit-card" style="border-left: 4px solid #2196F3;">
+                    <h3>Communication Agent</h3>
+                    <p class="text-muted">Manages email, chat, and messaging interactions with tone matching, scheduling, and follow-up automation.</p>
+                </div>
+                <div class="benefit-card" style="border-left: 4px solid #FF9800;">
+                    <h3>Analysis Agent</h3>
+                    <p class="text-muted">Performs data analysis, generates reports, identifies trends, and provides predictive recommendations.</p>
+                </div>
+                <div class="benefit-card" style="border-left: 4px solid #9C27B0;">
+                    <h3>Execution Agent</h3>
+                    <p class="text-muted">Completes tasks across systems like creating records, updating databases, triggering workflows, and API integrations.</p>
+                </div>
+                <div class="benefit-card" style="border-left: 4px solid #F44336;">
+                    <h3>Monitoring Agent</h3>
+                    <p class="text-muted">Watches for specific conditions, anomalies, or triggers and initiates appropriate responses automatically.</p>
+                </div>
+                <div class="benefit-card" style="border-left: 4px solid #00BCD4;">
+                    <h3>Creative Agent</h3>
+                    <p class="text-muted">Generates content, designs visuals, writes copy, and produces marketing materials tailored to audience segments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="content-section">
+        <div class="container reveal">
+            <h2 class="section-title">Technical Specifications</h2>
+            <div style="max-width: 900px; margin: 0 auto;">
+                <div class="tech-spec-row">
+                    <div class="tech-spec-label">Agent Architecture</div>
+                    <div class="tech-spec-value">LLM-powered, Memory-enabled, Tool-using, Multi-modal</div>
+                </div>
+                <div class="tech-spec-row">
+                    <div class="tech-spec-label">Integration Ecosystem</div>
+                    <div class="tech-spec-value">500+ pre-built connectors, Custom API support, Webhook triggers</div>
+                </div>
+                <div class="tech-spec-row">
+                    <div class="tech-spec-label">Customization</div>
+                    <div class="tech-spec-value">Visual workflow builder, Python scripting, Custom agent templates</div>
+                </div>
+                <div class="tech-spec-row">
+                    <div class="tech-spec-label">Monitoring & Control</div>
+                    <div class="tech-spec-value">Real-time dashboards, Agent performance metrics, Human-in-the-loop approval</div>
+                </div>
+                <div class="tech-spec-row">
+                    <div class="tech-spec-label">Enterprise Features</div>
+                    <div class="tech-spec-value">Role-based access, Audit logs, Version control, SLA guarantees</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="content-section center-align">
+        <div class="container reveal">
+            <h2 class="section-title">Build Your AI Workforce</h2>
+            <p class="about-text">Deploy intelligent agents that scale your team's capabilities exponentially.</p>
+            <div style="margin-top: 40px; display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <a href="contact.html" class="btn-cta">Request Demo</a>
+                <a href="products.html" class="btn-cta" style="background: transparent; border: 2px solid #fff;">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div><h4>DATA ARC</h4><p style="color: var(--text-muted); font-size: 14px;">Chennai, India</p><p style="color: var(--text-muted); font-size: 14px;">dataarcmd@gmail.com</p></div>
+            <div><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+            <div><h4>Expertise</h4><ul><li><a href="enterprise.html">AI for Enterprise</a></li><li><a href="engineering.html">Engineering</a></li><li><a href="design.html">Design</a></li><li><a href="research.html">Research</a></li></ul></div>
+            <div><h4>Quick Links</h4><ul><li><a href="mission.html">Mission</a></li><li><a href="vision.html">Vision</a></li><li><a href="products.html">Products</a></li><li><a href="services.html">Services</a></li></ul></div>
+        </div>
+        <div style="text-align: center; margin-top: 50px; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 20px;">
+            <p style="color: rgba(255,255,255,0.3); font-size: 12px;">© 2026 Data Arc. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

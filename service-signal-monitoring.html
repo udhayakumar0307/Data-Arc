@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Signal Monitoring | Data Arc</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-wrapper">
+            <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 15px;">
+                <img src="DataarcLogo.png" alt="Data Arc" class="header-logo-img" onerror="this.style.display='none'">
+                <h2>DATA ARC</h2>
+            </a>
+        </div>
+        <nav class="nav" id="nav-menu">
+            <div class="nav-item">
+                <div class="nav-link" onclick="toggleMobileSubmenu(this)">Overview <i class="fas fa-chevron-down"></i></div>
+                <div class="dropdown-menu"><a href="about.html">About Data Arc</a><a href="mission.html">Mission</a><a href="vision.html">Vision</a></div>
+            </div>
+            <div class="nav-item">
+                <div class="nav-link" onclick="toggleMobileSubmenu(this)">Expertise <i class="fas fa-chevron-down"></i></div>
+                <div class="dropdown-menu"><a href="enterprise.html">AI for Enterprise</a><a href="engineering.html">Engineering</a><a href="design.html">Design</a><a href="functions.html">Functions</a><a href="research.html">Research</a></div>
+            </div>
+            <div class="nav-item"><a href="products.html" class="nav-link">Products</a></div>
+            <div class="nav-item"><a href="services.html" class="nav-link">Services</a></div>
+            <div class="nav-item"><a href="careers.html" class="nav-link">Careers</a></div>
+            <div class="nav-item"><a href="contact.html" class="nav-link" style="font-weight: 700;">Contact Us</a></div>
+        </nav>
+        <div class="mobile-menu-btn" id="menu-toggle"><i class="fas fa-bars"></i></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="home-section" style="height: 60vh; min-height: 500px;">
+        <div class="video-bg">
+            <video autoplay muted loop playsinline>
+                <source src="https://framerusercontent.com/assets/4VFIVddqhtCk5hd3chmAk6i4.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="video-overlay"></div>
+        <div class="home-container reveal active">
+            <div class="home-content">
+                <div style="display: inline-block; padding: 8px 20px; background: rgba(255,255,255,0.1); border-radius: 30px; margin-bottom: 20px;">
+                    <i class="fas fa-chart-line"></i> Service
+                </div>
+                <h1>Real-Time Signal Monitoring</h1>
+                <p style="font-size: 1.3em; max-width: 700px; margin: 0 auto;">Never miss a critical moment with intelligent monitoring</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="content-section">
+        <div class="container reveal">
+            <h2 class="section-title">Service Overview</h2>
+            <p class="about-text">Our Real-Time Signal Monitoring service implements intelligent systems that continuously watch for meaningful changes, patterns, and opportunities across your data streams. We help you detect important signals before they become obvious, enabling proactive responses to risks and opportunities that impact your business.</p>
+        </div>
+    </section>
+
+    <!-- What We Do -->
+    <section class="content-section" style="background: #08182d;">
+        <div class="container reveal">
+            <h2 class="section-title">What We Do</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-cogs" style="font-size: 30px; color: #fff; margin-bottom: 15px;"></i>
+                    <h3>Signal Framework Design</h3>
+                    <p class="text-muted">Define what matters to your business, establish signal types, prioritization logic, and action triggers tailored to your objectives.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-stream" style="font-size: 30px; color: #fff; margin-bottom: 15px;"></i>
+                    <h3>Real-Time Data Streaming</h3>
+                    <p class="text-muted">Build high-throughput pipelines that ingest, process, and analyze data from websites, apps, IoT devices, APIs, and databases in real-time.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-robot" style="font-size: 30px; color: #fff; margin-bottom: 15px;"></i>
+                    <h3>AI-Powered Detection</h3>
+                    <p class="text-muted">Deploy machine learning models for intent classification, anomaly detection, trend forecasting, and behavioral pattern recognition.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-bell" style="font-size: 30px; color: #fff; margin-bottom: 15px;"></i>
+                    <h3>Intelligent Alerting</h3>
+                    <p class="text-muted">Configure smart notifications with context, severity levels, routing rules, and recommended actions delivered via your preferred channels.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-tachometer-alt" style="font-size: 30px; color: #fff; margin-bottom: 15px;"></i>
+                    <h3>Live Dashboards</h3>
+                    <p class="text-muted">Create real-time monitoring dashboards that show signal activity, trends, and key metrics with drill-down capabilities for investigation.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-sync-alt" style="font-size: 30px; color: #fff; margin-bottom: 15px;"></i>
+                    <h3>Automated Response</h3>
+                    <p class="text-muted">Trigger workflows, update systems, notify teams, or take corrective actions automatically when specific signal conditions are met.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signal Types We Monitor -->
+    <section class="content-section">
+        <div class="container reveal">
+            <h2 class="section-title">Signals We Track</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card" style="background: linear-gradient(135deg, #1e3a5f 0%, #0a1628 100%);">
+                    <i class="fas fa-user-check" style="font-size: 24px; color: #4CAF50; margin-bottom: 10px;"></i>
+                    <h3>Intent Signals</h3>
+                    <p class="text-muted">Website visits, content engagement, pricing page views, trial signups, email opens, demo requests indicating buying interest.</p>
+                </div>
+                <div class="benefit-card" style="background: linear-gradient(135deg, #1e3a5f 0%, #0a1628 100%);">
+                    <i class="fas fa-user-times" style="font-size: 24px; color: #F44336; margin-bottom: 10px;"></i>
+                    <h3>Churn Risk Signals</h3>
+                    <p class="text-muted">Declining usage, failed payments, support ticket patterns, negative sentiment, feature abandonment indicating retention risk.</p>
+                </div>
+                <div class="benefit-card" style="background: linear-gradient(135deg, #1e3a5f 0%, #0a1628 100%);">
+                    <i class="fas fa-exclamation-circle" style="font-size: 24px; color: #FF9800; margin-bottom: 10px;"></i>
+                    <h3>Operational Anomalies</h3>
+                    <p class="text-muted">System errors, performance degradation, security threats, data quality issues, unexpected traffic patterns.</p>
+                </div>
+                <div class="benefit-card" style="background: linear-gradient(135deg, #1e3a5f 0%, #0a1628 100%);">
+                    <i class="fas fa-chart-line" style="font-size: 24px; color: #2196F3; margin-bottom: 10px;"></i>
+                    <h3>Business Opportunity</h3>
+                    <p class="text-muted">Account expansion signals, upsell triggers, cross-sell opportunities, market shifts, competitor vulnerabilities.</p>
+                </div>
+                <div class="benefit-card" style="background: linear-gradient(135deg, #1e3a5f 0%, #0a1628 100%);">
+                    <i class="fas fa-comments" style="font-size: 24px; color: #9C27B0; margin-bottom: 10px;"></i>
+                    <h3>Customer Sentiment</h3>
+                    <p class="text-muted">Social media mentions, review sentiment, NPS scores, support interactions, community discussions about your brand.</p>
+                </div>
+                <div class="benefit-card" style="background: linear-gradient(135deg, #1e3a5f 0%, #0a1628 100%);">
+                    <i class="fas fa-industry" style="font-size: 24px; color: #00BCD4; margin-bottom: 10px;"></i>
+                    <h3>Market Intelligence</h3>
+                    <p class="text-muted">Industry news, competitor launches, regulatory changes, technology trends, partnership announcements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Process -->
+    <section class="content-section" style="background: #08182d;">
+        <div class="container reveal">
+            <h2 class="section-title">Implementation Process</h2>
+            <div style="max-width: 900px; margin: 0 auto;">
+                <div class="approach-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Signal Definition Workshop</h3>
+                        <p class="text-muted">Collaborate with your team to identify the most valuable signals for your business goals, define success metrics, and prioritize use cases.</p>
+                    </div>
+                </div>
+                <div class="approach-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Data Infrastructure Setup</h3>
+                        <p class="text-muted">Establish streaming data pipelines, event tracking, API integrations, and data lake architecture to capture all relevant signal sources.</p>
+                    </div>
+                </div>
+                <div class="approach-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>AI Model Training</h3>
+                        <p class="text-muted">Build and train custom ML models for your signal types using historical data, labeled examples, and continuous learning from outcomes.</p>
+                    </div>
+                </div>
+                <div class="approach-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Alert System Configuration</h3>
+                        <p class="text-muted">Set up notification channels, routing rules, escalation paths, and response playbooks for each signal category.</p>
+                    </div>
+                </div>
+                <div class="approach-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Testing & Optimization</h3>
+                        <p class="text-muted">Run pilot programs, calibrate thresholds, reduce false positives, and refine models based on feedback and real-world performance.</p>
+                    </div>
+                </div>
+                <div class="approach-step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Launch & Scale</h3>
+                        <p class="text-muted">Roll out monitoring across your organization, train teams on response protocols, and expand to additional signal types over time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="content-section">
+        <div class="container reveal">
+            <h2 class="section-title">Business Impact</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>Faster Response Times</h3>
+                    <p class="text-muted">React to opportunities and threats within minutes instead of days or weeks through instant detection and alerts.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Reduced Churn</h3>
+                    <p class="text-muted">Identify at-risk customers early and intervene proactively with retention strategies before they leave.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Increased Conversions</h3>
+                    <p class="text-muted">Engage high-intent prospects at the right moment with personalized outreach that drives more deals.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Better Resource Allocation</h3>
+                    <p class="text-muted">Focus team efforts on the highest-priority accounts and opportunities based on signal strength and potential value.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="content-section center-align" style="background: #08182d;">
+        <div class="container reveal">
+            <h2 class="section-title">Stay Ahead of What Matters</h2>
+            <p class="about-text">Let's build a signal monitoring system that keeps you one step ahead.</p>
+            <div style="margin-top: 40px; display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <a href="contact.html" class="btn-cta">Schedule Consultation</a>
+                <a href="services.html" class="btn-cta" style="background: transparent; border: 2px solid #fff;">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div><h4>DATA ARC</h4><p style="color: var(--text-muted); font-size: 14px;">Chennai, India</p><p style="color: var(--text-muted); font-size: 14px;">dataarcmd@gmail.com</p></div>
+            <div><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+            <div><h4>Expertise</h4><ul><li><a href="enterprise.html">AI for Enterprise</a></li><li><a href="engineering.html">Engineering</a></li><li><a href="design.html">Design</a></li><li><a href="research.html">Research</a></li></ul></div>
+            <div><h4>Quick Links</h4><ul><li><a href="mission.html">Mission</a></li><li><a href="vision.html">Vision</a></li><li><a href="products.html">Products</a></li><li><a href="services.html">Services</a></li></ul></div>
+        </div>
+        <div style="text-align: center; margin-top: 50px; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 20px;">
+            <p style="color: rgba(255,255,255,0.3); font-size: 12px;">© 2026 Data Arc. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
