@@ -756,9 +756,11 @@ body {
         color: #000000;
     }
 
-    .nav-link:hover,
-    .nav-link:active,
-    .nav-link.active {
+    .nav-item.active .nav-link {
+        color: var(--brand-gold);
+    }
+
+    .nav-link:active {
         color: var(--brand-gold);
     }
 
