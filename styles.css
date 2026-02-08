@@ -58,8 +58,11 @@ body {
 }
 
 .header-logo-img {
-    height: 35px;
+    height: 50px;
     width: auto;
+    filter: brightness(1.2) contrast(1.1);
+    mix-blend-mode: screen;
+    opacity: 0.95;
 }
 
 /* ================= NAVIGATION ================= */
@@ -471,6 +474,48 @@ body {
     color: var(--text-muted);
 }
 
+/* ================= PRODUCT/SERVICE CARDS WITH LEARN MORE ================= */
+.product-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 280px;
+}
+
+.btn-learn-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: auto;
+    padding: 12px 24px;
+    background: var(--brand-gold);
+    color: #0c2340;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-learn-more:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(255, 183, 0, 0.4);
+    background: #ffc929;
+}
+
+.btn-learn-more i {
+    transition: transform 0.3s ease;
+}
+
+.btn-learn-more:hover i {
+    transform: translateX(4px);
+}
+
 /* ================= RUNNING QUOTES SLIDER ================= */
 .quotes-slider {
     background: var(--darker-bg);
@@ -559,6 +604,72 @@ body {
     line-height: 1.7;
 }
 
+/* ================= TECHNICAL SPECIFICATIONS STYLING ================= */
+.tech-spec-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    gap: 20px;
+}
+
+.tech-spec-row:last-child {
+    border-bottom: none;
+}
+
+.tech-spec-label {
+    font-weight: 600;
+    color: #fff;
+    min-width: 200px;
+    flex-shrink: 0;
+}
+
+.tech-spec-value {
+    color: var(--text-muted);
+    text-align: right;
+    flex: 1;
+}
+
+/* ================= APPROACH STEPS STYLING ================= */
+.approach-step {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.approach-step:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--brand-gold) 0%, #ff9500 100%);
+    color: #0c2340;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.step-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.step-content .text-muted {
+    line-height: 1.6;
+}
+
 /* ================= FOOTER ================= */
 .footer {
     background: var(--darker-bg);
@@ -622,6 +733,8 @@ body {
         height: auto;
         padding: 20px 0;
         border-bottom: 1px solid var(--brand-gold);
+        max-height: calc(100vh - 65px);
+        overflow-y: auto;
     }
 
     .nav.active {
@@ -632,6 +745,7 @@ body {
         width: 100%;
         padding: 0;
         flex-direction: column;
+        height: auto;
     }
 
     .nav-link {
@@ -648,10 +762,23 @@ body {
         opacity: 1;
         visibility: visible;
         display: none;
-        background: rgba(0, 0, 0, 0.2);
+        background: rgba(8, 24, 45, 0.9);
         border: none;
         padding: 0;
         border-radius: 0;
+        box-shadow: none;
+    }
+
+    .dropdown-menu a {
+        color: #fff;
+        padding: 12px 20px 12px 40px;
+        border-left: 3px solid transparent;
+    }
+
+    .dropdown-menu a:hover {
+        background: rgba(255, 183, 0, 0.2);
+        border-left-color: var(--brand-gold);
+        color: var(--brand-gold);
     }
 
     .nav-item.active .dropdown-menu {
@@ -664,6 +791,10 @@ body {
 
     .benefits-grid {
         grid-template-columns: 1fr;
+    }
+
+    .header-logo-img {
+        height: 45px;
     }
 }
 
@@ -696,6 +827,34 @@ body {
     .home-content p {
         font-size: 16px;
     }
+
+    .tech-spec-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .tech-spec-label {
+        min-width: auto;
+    }
+    
+    .tech-spec-value {
+        text-align: left;
+    }
+    
+    .approach-step {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .step-number {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .header-logo-img {
+        height: 40px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -709,7 +868,7 @@ body {
     }
 
     .header-logo-img {
-        height: 28px;
+        height: 38px;
     }
 
     .benefit-card {
@@ -722,5 +881,10 @@ body {
 
     .about-text {
         font-size: 16px;
+    }
+
+    .btn-learn-more {
+        font-size: 12px;
+        padding: 10px 20px;
     }
 }
