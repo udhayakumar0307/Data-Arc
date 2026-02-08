@@ -500,6 +500,16 @@ body {
     letter-spacing: 1px;
     position: relative;
     z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+}
+
+.benefit-card:hover .btn-learn-more,
+.product-card:hover .btn-learn-more {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
 .btn-learn-more:hover {
