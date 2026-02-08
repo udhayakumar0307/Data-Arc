@@ -728,7 +728,7 @@ body {
         top: 65px;
         left: 0;
         width: 100%;
-        background: var(--panel-bg);
+        background: #ffffff;
         flex-direction: column;
         height: auto;
         padding: 20px 0;
@@ -752,7 +752,14 @@ body {
         padding: 15px 20px;
         width: 100%;
         justify-content: space-between;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        color: #000000;
+    }
+
+    .nav-link:hover,
+    .nav-link:active,
+    .nav-link.active {
+        color: var(--brand-gold);
     }
 
     .dropdown-menu {
@@ -762,7 +769,7 @@ body {
         opacity: 1;
         visibility: visible;
         display: none;
-        background: rgba(8, 24, 45, 0.9);
+        background: #f8f8f8;
         border: none;
         padding: 0;
         border-radius: 0;
@@ -770,13 +777,14 @@ body {
     }
 
     .dropdown-menu a {
-        color: #fff;
+        color: #000000;
         padding: 12px 20px 12px 40px;
         border-left: 3px solid transparent;
     }
 
-    .dropdown-menu a:hover {
-        background: rgba(255, 183, 0, 0.2);
+    .dropdown-menu a:hover,
+    .dropdown-menu a:active {
+        background: rgba(255, 183, 0, 0.1);
         border-left-color: var(--brand-gold);
         color: var(--brand-gold);
     }
@@ -794,7 +802,7 @@ body {
     }
 
     .header-logo-img {
-        height: 45px;
+        height: 55px;
     }
 }
 
@@ -853,7 +861,7 @@ body {
     }
 
     .header-logo-img {
-        height: 40px;
+        height: 50px;
     }
 }
 
@@ -868,7 +876,7 @@ body {
     }
 
     .header-logo-img {
-        height: 38px;
+        height: 48px;
     }
 
     .benefit-card {
