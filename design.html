@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design | Data Arc</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-wrapper">
+            <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 15px;">
+                <img src="DataarcLogo.png" alt="Data Arc" class="header-logo-img" onerror="this.style.display='none'">
+                <h2>DATA ARC</h2>
+            </a>
+        </div>
+        <nav class="nav" id="nav-menu">
+            <div class="nav-item">
+                <div class="nav-link" onclick="toggleMobileSubmenu(this)">Overview <i class="fas fa-chevron-down"></i></div>
+                <div class="dropdown-menu"><a href="about.html">About Data Arc</a><a href="mission.html">Mission</a><a href="vision.html">Vision</a></div>
+            </div>
+            <div class="nav-item">
+                <div class="nav-link" onclick="toggleMobileSubmenu(this)">Expertise <i class="fas fa-chevron-down"></i></div>
+                <div class="dropdown-menu"><a href="enterprise.html">AI for Enterprise</a><a href="engineering.html">Engineering</a><a href="design.html">Design</a><a href="functions.html">Functions</a><a href="research.html">Research</a></div>
+            </div>
+            <div class="nav-item"><a href="products.html" class="nav-link">Products</a></div>
+            <div class="nav-item"><a href="services.html" class="nav-link">Services</a></div>
+            <div class="nav-item"><a href="careers.html" class="nav-link">Careers</a></div>
+            <div class="nav-item"><a href="contact.html" class="nav-link" style="font-weight: 700;">Contact Us</a></div>
+        </nav>
+        <div class="mobile-menu-btn" id="menu-toggle"><i class="fas fa-bars"></i></div>
+    </header>
+
+    <!-- Home Video Section -->
+    <section class="home-section" style="height: 60vh; min-height: 500px;">
+        <div class="video-bg">
+            <video autoplay muted playsinline>
+                <source src="https://framerusercontent.com/assets/4VFIVddqhtCk5hd3chmAk6i4.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="video-overlay"></div>
+        <div class="home-container reveal active">
+            <div class="home-content">
+                <h1>Human-Centered <br><span>AI Design</span></h1>
+                <p>Making AI intuitive, accessible, and delightful for every user.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Running Quotes Slider -->
+    <section class="quotes-slider">
+        <div class="quotes-track">
+            <div class="quote-item">Design thinking meets AI innovation</div>
+            <div class="quote-item">User experience at the core</div>
+            <div class="quote-item">Intuitive interfaces for complex systems</div>
+            <div class="quote-item">AI that feels natural</div>
+            <div class="quote-item">From insights to interactions</div>
+            <div class="quote-item">Beautiful AI, powerful results</div>
+            <div class="quote-item">Design thinking meets AI innovation</div>
+            <div class="quote-item">User experience at the core</div>
+            <div class="quote-item">Intuitive interfaces for complex systems</div>
+            <div class="quote-item">AI that feels natural</div>
+            <div class="quote-item">From insights to interactions</div>
+            <div class="quote-item">Beautiful AI, powerful results</div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container reveal">
+            <h2 class="section-title">Design Philosophy</h2>
+            <p class="about-text">
+                At Data Arc, we believe that powerful AI shouldn't require a PhD to use. Our human-centered design approach 
+                ensures that every AI solution we build is intuitive, accessible, and genuinely useful for the people who interact with it daily.
+            </p>
+        </div>
+    </section>
+
+    <section class="content-section" style="background: #08182d;">
+        <div class="container reveal">
+            <h2 class="section-title" style="margin-bottom: 50px;">Design Capabilities</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-users" style="font-size: 30px; color: var(--brand-gold); margin-bottom: 15px;"></i>
+                    <h3>User Research & Discovery</h3>
+                    <p class="text-muted">Deep understanding of user needs, behaviors, and pain points through ethnographic research and data analysis to inform AI design decisions.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-pencil-ruler" style="font-size: 30px; color: var(--brand-gold); margin-bottom: 15px;"></i>
+                    <h3>Interface Design</h3>
+                    <p class="text-muted">Create beautiful, functional interfaces that make complex AI systems feel simple and natural to interact with.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-flask" style="font-size: 30px; color: var(--brand-gold); margin-bottom: 15px;"></i>
+                    <h3>Prototyping & Testing</h3>
+                    <p class="text-muted">Rapid prototyping and iterative user testing to validate design decisions before full-scale implementation.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-universal-access" style="font-size: 30px; color: var(--brand-gold); margin-bottom: 15px;"></i>
+                    <h3>Accessibility & Inclusion</h3>
+                    <p class="text-muted">Ensure AI solutions are accessible to all users, regardless of technical skill level or physical abilities.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-chart-line" style="font-size: 30px; color: var(--brand-gold); margin-bottom: 15px;"></i>
+                    <h3>Data Visualization</h3>
+                    <p class="text-muted">Transform complex AI outputs into clear, actionable visual insights that drive better decision-making.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-mobile-alt" style="font-size: 30px; color: var(--brand-gold); margin-bottom: 15px;"></i>
+                    <h3>Cross-Platform Design</h3>
+                    <p class="text-muted">Consistent, seamless experiences across web, mobile, and desktop platforms for your AI applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container reveal">
+            <h2 class="section-title" style="margin-bottom: 50px;">Our Design Process</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <h3><i class="fas fa-search" style="color: var(--brand-gold); margin-right: 10px;"></i>1. Discovery & Research</h3>
+                    <p>Understand your users, their workflows, and the business problems AI needs to solve through comprehensive research.</p>
+                </div>
+                <div class="feature-item">
+                    <h3><i class="fas fa-lightbulb" style="color: var(--brand-gold); margin-right: 10px;"></i>2. Ideation & Concepts</h3>
+                    <p>Generate multiple design concepts that balance user needs with AI capabilities and technical constraints.</p>
+                </div>
+                <div class="feature-item">
+                    <h3><i class="fas fa-drafting-compass" style="color: var(--brand-gold); margin-right: 10px;"></i>3. Design & Prototype</h3>
+                    <p>Create high-fidelity prototypes that bring AI interactions to life and allow for early validation.</p>
+                </div>
+                <div class="feature-item">
+                    <h3><i class="fas fa-check-circle" style="color: var(--brand-gold); margin-right: 10px;"></i>4. Test & Refine</h3>
+                    <p>Conduct usability testing with real users and iterate based on feedback to optimize the experience.</p>
+                </div>
+                <div class="feature-item">
+                    <h3><i class="fas fa-rocket" style="color: var(--brand-gold); margin-right: 10px;"></i>5. Launch & Evolve</h3>
+                    <p>Support implementation and continue optimizing the design based on usage data and user feedback.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section center-align" style="background: #08182d;">
+        <div class="container reveal">
+            <h2 class="section-title">Design AI That Users Love</h2>
+            <p class="about-text">Let's create AI experiences that are not just powerful, but genuinely delightful to use.</p>
+            <div style="margin-top: 40px;"><a href="contact.html" class="btn-cta">Start Your Design Project</a></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div><h4>DATA ARC</h4><p style="color: var(--text-muted); font-size: 14px;">Chennai, India</p><p style="color: var(--text-muted); font-size: 14px;">dataarcmd@gmail.com</p></div>
+            <div><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+            <div><h4>Expertise</h4><ul><li><a href="enterprise.html">AI for Enterprise</a></li><li><a href="engineering.html">Engineering</a></li><li><a href="design.html">Design</a></li><li><a href="research.html">Research</a></li></ul></div>
+            <div><h4>Quick Links</h4><ul><li><a href="mission.html">Mission</a></li><li><a href="vision.html">Vision</a></li><li><a href="products.html">Products</a></li><li><a href="services.html">Services</a></li></ul></div>
+        </div>
+        <div style="text-align: center; margin-top: 50px; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 20px;">
+            <p style="color: rgba(255,255,255,0.3); font-size: 12px;">Â© 2026 Data Arc. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faster, Smarter Decision-Making | Data Arc</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-wrapper">
+            <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 15px;">
+                <img src="DataarcLogo.png" alt="Data Arc" class="header-logo-img" onerror="this.style.display='none'">
+                <h2>DATA ARC</h2>
+            </a>
+        </div>
+        <nav class="nav" id="nav-menu">
+            <div class="nav-item">
+                <div class="nav-link" onclick="toggleMobileSubmenu(this)">Overview <i class="fas fa-chevron-down"></i></div>
+                <div class="dropdown-menu"><a href="about.html">About Data Arc</a><a href="mission.html">Mission</a><a href="vision.html">Vision</a></div>
+            </div>
+            <div class="nav-item">
+                <div class="nav-link" onclick="toggleMobileSubmenu(this)">Expertise <i class="fas fa-chevron-down"></i></div>
+                <div class="dropdown-menu"><a href="enterprise.html">AI for Enterprise</a><a href="engineering.html">Engineering</a><a href="design.html">Design</a><a href="functions.html">Functions</a><a href="research.html">Research</a></div>
+            </div>
+            <div class="nav-item"><a href="products.html" class="nav-link">Products</a></div>
+            <div class="nav-item"><a href="services.html" class="nav-link">Services</a></div>
+            <div class="nav-item"><a href="careers.html" class="nav-link">Careers</a></div>
+            <div class="nav-item"><a href="contact.html" class="nav-link" style="font-weight: 700;">Contact Us</a></div>
+        </nav>
+        <div class="mobile-menu-btn" id="menu-toggle"><i class="fas fa-bars"></i></div>
+    </header>
+
+    
+    <section class="home-section" style="height: 60vh; min-height: 500px;">
+        <div class="video-bg">
+            <video autoplay muted playsinline>
+                <source src="https://framerusercontent.com/assets/4VFIVddqhtCk5hd3chmAk6i4.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="video-overlay"></div>
+        <div class="home-container reveal active">
+            <div class="home-content">
+                <h1>Faster, Smarter <br><span>Decision-Making</span></h1>
+                <p>AI-powered insights that transform data into action in real-time.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="quotes-slider">
+        <div class="quotes-track">
+            <div class="quote-item">Data-driven decisions at the speed of business</div>
+            <div class="quote-item">Real-time insights, immediate impact</div>
+            <div class="quote-item">From analysis to action in seconds</div>
+            <div class="quote-item">Intelligence that keeps pace with change</div>
+            <div class="quote-item">Decisions backed by AI precision</div>
+            <div class="quote-item">Clarity in complexity</div>
+            <div class="quote-item">Data-driven decisions at the speed of business</div>
+            <div class="quote-item">Real-time insights, immediate impact</div>
+            <div class="quote-item">From analysis to action in seconds</div>
+            <div class="quote-item">Intelligence that keeps pace with change</div>
+            <div class="quote-item">Decisions backed by AI precision</div>
+            <div class="quote-item">Clarity in complexity</div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container reveal">
+            <h2 class="section-title">The Decision-Making Challenge</h2>
+            <p class="about-text">
+                In today's fast-paced business environment, decisions need to be made quicklyâ€”but speed without accuracy is dangerous. 
+                Traditional analytics tools leave decision-makers waiting for reports, struggling with complex data, and second-guessing their choices. 
+                Data Arc's AI-powered decision intelligence changes this entirely.
+            </p>
+        </div>
+    </section>
+
+    <section class="content-section" style="background: #08182d;">
+        <div class="container reveal">
+            <h2 class="section-title" style="margin-bottom: 50px;">How We Enable Faster, Smarter Decisions</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-tachometer-alt" style="font-size: 30px; color: var(--brand-gold); margin-bottom: 15px;"></i>
+                    <h3>Real-Time Analytics</h3>
+                    <p class="text-muted">Process and analyze data streams in real-time, delivering insights the moment they matter most for your business.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-brain" style="font-size: 30px; color: var(--brand-gold); margin-bottom: 15px;"></i>
+                    <h3>Predictive Intelligence</h3>
+                    <p class="text-muted">AI models that anticipate outcomes, identify trends before they emerge, and recommend optimal courses of action.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-chart-pie" style="font-size: 30px; color: var(--brand-gold); margin-bottom: 15px;"></i>
+                    <h3>Visual Decision Dashboards</h3>
+                    <p class="text-muted">Complex data transformed into intuitive visualizations that make patterns obvious and decisions clear.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-robot" style="font-size: 30px; color: var(--brand-gold); margin-bottom: 15px;"></i>
+                    <h3>Automated Recommendations</h3>
+                    <p class="text-muted">AI agents that continuously monitor your business and proactively suggest actions based on current conditions.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-layer-group" style="font-size: 30px; color: var(--brand-gold); margin-bottom: 15px;"></i>
+                    <h3>Multi-Source Integration</h3>
+                    <p class="text-muted">Unify data from all systemsâ€”CRM, ERP, databases, APIsâ€”into a single source of truth for decision-making.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-check-double" style="font-size: 30px; color: var(--brand-gold); margin-bottom: 15px;"></i>
+                    <h3>Confidence Scoring</h3>
+                    <p class="text-muted">Every insight comes with AI-calculated confidence levels, so you know exactly how reliable each recommendation is.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container reveal">
+            <h2 class="section-title" style="margin-bottom: 50px;">Real-World Applications</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <h3><i class="fas fa-shopping-cart" style="color: var(--brand-gold); margin-right: 10px;"></i>Retail & E-Commerce</h3>
+                    <p>Dynamic pricing optimization, inventory allocation, customer demand forecasting, and personalized product recommendationsâ€”all powered by real-time AI analysis.</p>
+                </div>
+                <div class="feature-item">
+                    <h3><i class="fas fa-industry" style="color: var(--brand-gold); margin-right: 10px;"></i>Manufacturing</h3>
+                    <p>Production scheduling, supply chain adjustments, quality control alerts, and maintenance predictions that minimize downtime and maximize output.</p>
+                </div>
+                <div class="feature-item">
+                    <h3><i class="fas fa-chart-line" style="color: var(--brand-gold); margin-right: 10px;"></i>Finance</h3>
+                    <p>Portfolio optimization, risk assessment, fraud detection, and market opportunity identification with AI that processes millions of data points instantly.</p>
+                </div>
+                <div class="feature-item">
+                    <h3><i class="fas fa-heartbeat" style="color: var(--brand-gold); margin-right: 10px;"></i>Healthcare</h3>
+                    <p>Patient outcome predictions, treatment recommendations, resource allocation, and operational efficiency improvements backed by clinical AI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section center-align" style="background: #08182d;">
+        <div class="container reveal">
+            <h2 class="section-title">Transform Your Decision-Making Process</h2>
+            <p class="about-text">Stop waiting for insights. Start making smarter decisions faster with Data Arc's AI-powered intelligence.</p>
+            <div style="margin-top: 40px;"><a href="contact.html" class="btn-cta">Get Started Today</a></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div><h4>DATA ARC</h4><p style="color: var(--text-muted); font-size: 14px;">Chennai, India</p><p style="color: var(--text-muted); font-size: 14px;">dataarcmd@gmail.com</p></div>
+            <div><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+            <div><h4>Expertise</h4><ul><li><a href="enterprise.html">AI for Enterprise</a></li><li><a href="engineering.html">Engineering</a></li><li><a href="design.html">Design</a></li><li><a href="research.html">Research</a></li></ul></div>
+            <div><h4>Quick Links</h4><ul><li><a href="mission.html">Mission</a></li><li><a href="vision.html">Vision</a></li><li><a href="products.html">Products</a></li><li><a href="services.html">Services</a></li></ul></div>
+        </div>
+        <div style="text-align: center; margin-top: 50px; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 20px;">
+            <p style="color: rgba(255,255,255,0.3); font-size: 12px;">Â© 2026 Data Arc. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

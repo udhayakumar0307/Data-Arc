@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Data Arc</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-wrapper">
+            <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 15px;">
+                <img src="DataarcLogo.png" alt="Data Arc" class="header-logo-img" onerror="this.style.display='none'">
+                <h2>DATA ARC</h2>
+            </a>
+        </div>
+        <nav class="nav" id="nav-menu">
+            <div class="nav-item">
+                <div class="nav-link" onclick="toggleMobileSubmenu(this)">Overview <i class="fas fa-chevron-down"></i></div>
+                <div class="dropdown-menu"><a href="about.html">About Data Arc</a><a href="mission.html">Mission</a><a href="vision.html">Vision</a></div>
+            </div>
+            <div class="nav-item">
+                <div class="nav-link" onclick="toggleMobileSubmenu(this)">Expertise <i class="fas fa-chevron-down"></i></div>
+                <div class="dropdown-menu"><a href="enterprise.html">AI for Enterprise</a><a href="engineering.html">Engineering</a><a href="design.html">Design</a><a href="functions.html">Functions</a><a href="research.html">Research</a></div>
+            </div>
+            <div class="nav-item"><a href="products.html" class="nav-link">Products</a></div>
+            <div class="nav-item"><a href="services.html" class="nav-link">Services</a></div>
+            <div class="nav-item"><a href="careers.html" class="nav-link">Careers</a></div>
+            <div class="nav-item"><a href="contact.html" class="nav-link" style="font-weight: 700;">Contact Us</a></div>
+        </nav>
+        <div class="mobile-menu-btn" id="menu-toggle"><i class="fas fa-bars"></i></div>
+    </header>
+
+
+      <!-- Home Video Section -->
+    <section class="home-section" style="height: 60vh; min-height: 500px;">
+        <div class="video-bg">
+            <video autoplay muted playsinline>
+                <source src="https://framerusercontent.com/assets/4VFIVddqhtCk5hd3chmAk6i4.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="video-overlay"></div>
+        <div class="home-container reveal active">
+            <div class="home-content">
+            <h1>Get in Touch</h1>
+            <p>Let's discuss how Data Arc can help transform your business with intelligent AI.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Running Quotes Slider -->
+    <section class="quotes-slider">
+        <div class="quotes-track">
+            <div class="quote-item">Design thinking meets AI innovation</div>
+            <div class="quote-item">User experience at the core</div>
+            <div class="quote-item">Intuitive interfaces for complex systems</div>
+            <div class="quote-item">AI that feels natural</div>
+            <div class="quote-item">From insights to interactions</div>
+            <div class="quote-item">Beautiful AI, powerful results</div>
+            <div class="quote-item">Design thinking meets AI innovation</div>
+            <div class="quote-item">User experience at the core</div>
+            <div class="quote-item">Intuitive interfaces for complex systems</div>
+            <div class="quote-item">AI that feels natural</div>
+            <div class="quote-item">From insights to interactions</div>
+            <div class="quote-item">Beautiful AI, powerful results</div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; max-width: 1000px; margin: 0 auto;">
+                
+                <!-- Contact Info -->
+                <div class="reveal">
+                    <h2 style="color: #fff; margin-bottom: 30px; font-size: 28px;">Contact Information</h2>
+                    
+                    <div style="margin-bottom: 30px;">
+                        <div style="display: flex; align-items: start; gap: 15px; margin-bottom: 20px;">
+                            <i class="fas fa-map-marker-alt" style="color: var(--brand-gold); font-size: 20px; margin-top: 5px;"></i>
+                            <div>
+                                <h4 style="color: #fff; margin-bottom: 5px;">Location</h4>
+                                <p style="color: var(--text-muted);">Chennai, India</p>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: start; gap: 15px; margin-bottom: 20px;">
+                            <i class="fas fa-envelope" style="color: var(--brand-gold); font-size: 20px; margin-top: 5px;"></i>
+                            <div>
+                                <h4 style="color: #fff; margin-bottom: 5px;">Email</h4>
+                                <a href="mailto:dataarcmd@gmail.com" style="color: var(--text-muted); text-decoration: none;">dataarcmd@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 50px;">
+                        <h3 style="color: #fff; margin-bottom: 20px;">Why Choose Data Arc?</h3>
+                        <ul style="list-style: none; color: var(--text-muted); line-height: 2;">
+                            <li><i class="fas fa-check" style="color: var(--brand-gold); margin-right: 10px;"></i>Production-ready AI solutions</li>
+                            <li><i class="fas fa-check" style="color: var(--brand-gold); margin-right: 10px;"></i>Enterprise-grade security</li>
+                            <li><i class="fas fa-check" style="color: var(--brand-gold); margin-right: 10px;"></i>Measurable business outcomes</li>
+                            <li><i class="fas fa-check" style="color: var(--brand-gold); margin-right: 10px;"></i>Seamless integration</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="reveal">
+                    <form style="background: var(--panel-bg); padding: 40px; border-radius: 8px; border: 1px solid var(--border);">
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; color: #fff; margin-bottom: 8px; font-size: 14px;">Name *</label>
+                            <input type="text" required style="width: 100%; padding: 12px; background: var(--main-bg); border: 1px solid var(--border); color: #fff; border-radius: 4px; font-family: 'Inter', sans-serif;">
+                        </div>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; color: #fff; margin-bottom: 8px; font-size: 14px;">Email *</label>
+                            <input type="email" required style="width: 100%; padding: 12px; background: var(--main-bg); border: 1px solid var(--border); color: #fff; border-radius: 4px; font-family: 'Inter', sans-serif;">
+                        </div>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; color: #fff; margin-bottom: 8px; font-size: 14px;">Company</label>
+                            <input type="text" style="width: 100%; padding: 12px; background: var(--main-bg); border: 1px solid var(--border); color: #fff; border-radius: 4px; font-family: 'Inter', sans-serif;">
+                        </div>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; color: #fff; margin-bottom: 8px; font-size: 14px;">Message *</label>
+                            <textarea required rows="5" style="width: 100%; padding: 12px; background: var(--main-bg); border: 1px solid var(--border); color: #fff; border-radius: 4px; font-family: 'Inter', sans-serif; resize: vertical;"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-cta" style="width: 100%; cursor: pointer; border: none;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div><h4>DATA ARC</h4><p style="color: var(--text-muted); font-size: 14px;">Chennai, India</p><p style="color: var(--text-muted); font-size: 14px;">dataarcmd@gmail.com</p></div>
+            <div><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+            <div><h4>Expertise</h4><ul><li><a href="enterprise.html">AI for Enterprise</a></li><li><a href="engineering.html">Engineering</a></li><li><a href="design.html">Design</a></li><li><a href="research.html">Research</a></li></ul></div>
+            <div><h4>Quick Links</h4><ul><li><a href="mission.html">Mission</a></li><li><a href="vision.html">Vision</a></li><li><a href="products.html">Products</a></li><li><a href="services.html">Services</a></li></ul></div>
+        </div>
+        <div style="text-align: center; margin-top: 50px; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 20px;">
+            <p style="color: rgba(255,255,255,0.3); font-size: 12px;">Â© 2026 Data Arc. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    
+    <style>
+        @media (max-width: 768px) {
+            section.content-section > div > div {
+                grid-template-columns: 1fr !important;
+            }
+        }
+        
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--brand-gold);
+        }
+    </style>
+</body>
+</html>
