@@ -15,7 +15,17 @@ if (menuToggle) {
 function toggleMobileSubmenu(element) {
     if (window.innerWidth <= 1024) {
         const parent = element.parentElement;
-        parent.classList.toggle('active');
+        const isActive = parent.classList.contains('active');
+
+        // Close all other open submenus
+        document.querySelectorAll('.nav-item.active').forEach(item => {
+            if (item !== parent) {
+                item.classList.remove('active');
+            }
+        });
+
+        // Toggle the clicked one
+        parent.classList.toggle('active', !isActive);
     }
 }
 
