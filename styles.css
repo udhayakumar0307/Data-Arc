@@ -782,8 +782,26 @@ body {
         color: var(--brand-gold);
     }
 
+    /* ---- Kill desktop hover-based dropdown on mobile ---- */
+    .nav-item:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        position: static;
+        max-height: 0;
+        padding: 0;
+    }
+
+    .nav-item:hover .nav-link {
+        color: inherit;
+    }
+
+    .nav-item:hover .nav-link i {
+        transform: none;
+    }
+
+    /* ---- Mobile accordion dropdown ---- */
     .dropdown-menu {
-        /* Reset ALL desktop positioning — drop straight down, full width */
         position: static !important;
         top: auto !important;
         left: auto !important;
@@ -791,27 +809,25 @@ body {
         transform: none !important;
         width: 100% !important;
         min-width: 0 !important;
-        /* Animate with max-height only — no opacity/visibility flicker */
-        opacity: 1;
-        visibility: visible;
+        opacity: 1 !important;
+        visibility: visible !important;
         max-height: 0;
         overflow: hidden;
         display: block;
-        background: #f0f0f0;
+        background: #f5f5f5;
         border: none;
         border-top: 2px solid var(--brand-gold);
         padding: 0;
         border-radius: 0;
-        box-shadow: none;
-        transition: max-height 0.35s ease, padding 0.3s ease;
-        /* Ensure it spans the full nav width with no indent */
+        box-shadow: none !important;
         margin: 0;
         box-sizing: border-box;
+        transition: max-height 0.35s ease, padding 0.3s ease;
     }
 
     .nav-item.active .dropdown-menu {
-        max-height: 400px;
-        padding: 6px 0;
+        max-height: 400px !important;
+        padding: 6px 0 !important;
     }
 
     .dropdown-menu a {
@@ -819,14 +835,12 @@ body {
         width: 100%;
         box-sizing: border-box;
         color: #0c2340;
-        /* Left padding for indent, right padding balanced — no shift */
         padding: 13px 20px 13px 32px;
         border-left: none;
         font-size: 13px;
         font-weight: 600;
         text-decoration: none;
         white-space: normal;
-        word-break: break-word;
     }
 
     .dropdown-menu a:hover,
