@@ -773,6 +773,7 @@ body {
         background: rgba(255, 183, 0, 0.05);
     }
 
+    /* Rotate chevron when submenu is open on mobile */
     .nav-item.active .nav-link i {
         transform: rotate(180deg);
     }
@@ -785,13 +786,15 @@ body {
         position: static;
         transform: none;
         width: 100%;
+        /* Use only max-height animation — opacity/visibility cause invisible-but-open bug */
         opacity: 1;
         visibility: visible;
         max-height: 0;
         overflow: hidden;
         display: block;
-        background: #f8f8f8;
+        background: #f4f4f4;
         border: none;
+        border-left: 3px solid var(--brand-gold);
         padding: 0;
         border-radius: 0;
         box-shadow: none;
@@ -799,8 +802,8 @@ body {
     }
 
     .nav-item.active .dropdown-menu {
-        max-height: 500px;
-        padding: 10px 0;
+        max-height: 400px;
+        padding: 8px 0;
     }
 
     .dropdown-menu a {
