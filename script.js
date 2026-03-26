@@ -8,26 +8,47 @@ if (menuToggle) {
         const icon = menuToggle.querySelector('i');
         icon.classList.toggle('fa-bars');
         icon.classList.toggle('fa-times');
+
+        // Close all open submenus when closing the nav
+        if (!navMenu.classList.contains('active')) {
+            document.querySelectorAll('.nav-item.active').forEach(item => {
+                item.classList.remove('active');
+            });
+        }
     });
 }
 
-// Mobile Submenu Toggle
+// Mobile Submenu Toggle — accordion style (one open at a time)
 function toggleMobileSubmenu(element) {
     if (window.innerWidth <= 1024) {
         const parent = element.parentElement;
         const isActive = parent.classList.contains('active');
 
-        // Close all other open submenus
+        // Close all other open submenus (accordion)
         document.querySelectorAll('.nav-item.active').forEach(item => {
-            if (item !== parent) {
-                item.classList.remove('active');
-            }
+            if (item !== parent) item.classList.remove('active');
         });
 
-        // Toggle the clicked one
+        // Toggle the tapped one
         parent.classList.toggle('active', !isActive);
     }
 }
+
+// Close mobile menu when tapping outside
+document.addEventListener('click', (e) => {
+    if (window.innerWidth <= 1024 && navMenu && navMenu.classList.contains('active')) {
+        const header = document.querySelector('header') || navMenu.closest('header');
+        if (header && !header.contains(e.target)) {
+            navMenu.classList.remove('active');
+            document.querySelectorAll('.nav-item.active').forEach(item => item.classList.remove('active'));
+            const icon = menuToggle && menuToggle.querySelector('i');
+            if (icon) {
+                icon.classList.add('fa-bars');
+                icon.classList.remove('fa-times');
+            }
+        }
+    }
+});
 
 // Video Control - Play once, stop on scroll, restart on top
 const homeVideo = document.querySelector('.video-bg video');
