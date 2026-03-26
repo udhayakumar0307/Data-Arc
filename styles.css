@@ -756,7 +756,7 @@ body {
         padding: 0;
         flex-direction: column;
         height: auto;
-        align-items: flex-start;
+        align-items: stretch;
     }
 
     .nav-link {
@@ -783,41 +783,57 @@ body {
     }
 
     .dropdown-menu {
-        position: static;
-        transform: none;
-        width: 100%;
-        /* Use only max-height animation — opacity/visibility cause invisible-but-open bug */
+        /* Reset ALL desktop positioning — drop straight down, full width */
+        position: static !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        transform: none !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        /* Animate with max-height only — no opacity/visibility flicker */
         opacity: 1;
         visibility: visible;
         max-height: 0;
         overflow: hidden;
         display: block;
-        background: #f4f4f4;
+        background: #f0f0f0;
         border: none;
-        border-left: 3px solid var(--brand-gold);
+        border-top: 2px solid var(--brand-gold);
         padding: 0;
         border-radius: 0;
         box-shadow: none;
         transition: max-height 0.35s ease, padding 0.3s ease;
+        /* Ensure it spans the full nav width with no indent */
+        margin: 0;
+        box-sizing: border-box;
     }
 
     .nav-item.active .dropdown-menu {
         max-height: 400px;
-        padding: 8px 0;
+        padding: 6px 0;
     }
 
     .dropdown-menu a {
-        color: #0c2340;
-        padding: 12px 20px 12px 40px;
-        border-left: 3px solid transparent;
         display: block;
+        width: 100%;
+        box-sizing: border-box;
+        color: #0c2340;
+        /* Left padding for indent, right padding balanced — no shift */
+        padding: 13px 20px 13px 32px;
+        border-left: none;
+        font-size: 13px;
+        font-weight: 600;
+        text-decoration: none;
+        white-space: normal;
+        word-break: break-word;
     }
 
     .dropdown-menu a:hover,
     .dropdown-menu a:active {
-        background: rgba(255, 183, 0, 0.1);
-        border-left-color: var(--brand-gold);
+        background: rgba(255, 183, 0, 0.12);
         color: var(--brand-gold);
+        padding-left: 38px;
     }
 
     .mobile-menu-btn {
