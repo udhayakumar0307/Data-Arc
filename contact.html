@@ -105,25 +105,8 @@
                     </div>
                 </div>
 
-                <!-- Contact Form -->
-               <div class="reveal">
-<form action="https://formsubmit.co/veeravairam@dataarc.in" method="POST" style="background: var(--panel-bg); padding: 40px; border-radius: 8px; border: 1px solid var(--border);">
-
-        <!-- Second email -->
-        <input type="hidden" name="_cc" value="abdulwasiv@dataarc.in">
-
-        <!-- Enable spam protection -->
-        <input type="hidden" name="_captcha" value="true">
-
-        <!-- Honeypot (extra protection) -->
-        <input type="text" name="_honey" style="display:none">
-
-        <!-- Subject -->
-        <input type="hidden" name="_subject" value="New Business Enquiry – Data Arc">
-
-        <!-- Email format -->
-        <input type="hidden" name="_template" value="table">
-
+                               <div class="reveal">
+<form action="https://formsubmit.co/veeravairam@dataarc.in,abdulwasiv@dataarc.in" method="POST" style="background: var(--panel-bg); padding: 40px; border-radius: 8px; border: 1px solid var(--border);">
         <div style="margin-bottom: 20px;">
             <label style="display: block; color: #fff; margin-bottom: 8px; font-size: 14px;">Name *</label>
             <input type="text" name="Name" required style="width: 100%; padding: 12px; background: var(--main-bg); border: 1px solid var(--border); color: #fff; border-radius: 4px; font-family: 'Inter', sans-serif;">
@@ -144,11 +127,13 @@
             <textarea name="Message" required rows="5" style="width: 100%; padding: 12px; background: var(--main-bg); border: 1px solid var(--border); color: #fff; border-radius: 4px; font-family: 'Inter', sans-serif; resize: vertical;"></textarea>
         </div>
 
-        <button type="submit" class="btn-cta" style="width: 100%; cursor: pointer; border: none;">
-            Send Message
-        </button>
-
-</form>
+        <!-- FormSubmit hidden fields -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Business Enquiry – Data Arc">
+        <input type="hidden" name="_template" value="table">
+        
+        <button type="submit" class="btn-cta" style="width: 100%; cursor: pointer; border: none;">Send Message</button>
+    </form>
 </div>
             </div>
         </div>
